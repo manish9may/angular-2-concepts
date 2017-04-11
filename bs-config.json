@@ -1,0 +1,10 @@
+{
+  "port": 8085,
+  "server": { 
+  	"baseDir": ["./angular2-typescript-practice"],
+  	"files" : ["./angular2-typescript-practice/**/*.{html,htm,css,js}"],
+  	"routes" : {
+  		"/node_modules" : "node_modules"
+  	}
+   }
+}
