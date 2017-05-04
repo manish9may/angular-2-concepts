@@ -4,8 +4,8 @@
     "version": "2.0.0",
     "repository": "https://github.com/danwahlin/angular-jumpstart",
     "scripts": {
-        "tsc:w": "tsc --p \"angular-2-master/www\" -w",
-        "start": "tsc && concurrently \"npm run tsc:w\" \"node angular-2-master/server/server.js\" "
+        "tsc:w": "tsc --p \"angular60\" -w",
+        "start": "tsc && concurrently \"npm run tsc:w\" \"node angular60/server/server.js\" "
     },
     "license": "ISC",
     "dependencies": {
@@ -24,6 +24,7 @@
         "@angular/animations": "4.0.0",
         "systemjs": "0.19.47",
         "core-js": "2.4.1",
+        "reflect-metadata": "^0.1.8",
         "rxjs": "5.2.0",
         "zone.js": "0.8.5",
         "express": "4.15.2",
