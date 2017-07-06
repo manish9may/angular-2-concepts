@@ -1,8 +1,8 @@
 {
   "port": 8085,
   "server": { 
-  	"baseDir": ["./angular60"],
-  	"files" : ["./angular60/**/*.{html,htm,css,js}"],
+  	"baseDir": ["./angular-4-first-app"],
+  	"files" : ["./angular-4-first-app/**/*.{html,htm,css,js}"],
   	"routes" : {
   		"/node_modules" : "node_modules"
   	}

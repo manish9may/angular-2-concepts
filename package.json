@@ -4,8 +4,8 @@
     "version": "2.0.0",
     "repository": "https://github.com/danwahlin/angular-jumpstart",
     "scripts": {
-        "tsc:w": "tsc --p \"angular60\" -w",
-        "start": "tsc && concurrently \"npm run tsc:w\" \"node angular60/server/server.js\" "
+        "tsc:w": "tsc --p \"angular-4-first-app\" -w",
+        "start": "tsc && concurrently \"npm run tsc:w\" \"node angular-4-first-app/server/server.js\" "
     },
     "license": "ISC",
     "dependencies": {
@@ -28,7 +28,8 @@
         "rxjs": "5.2.0",
         "zone.js": "0.8.5",
         "express": "4.15.2",
-        "body-parser": "1.17.1"
+        "body-parser": "1.17.1",
+        "bootstrap" : "latest"
     },
     "devDependencies": {
         "@types/node": "7.0.11",

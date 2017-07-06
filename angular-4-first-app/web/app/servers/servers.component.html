@@ -1,0 +1,27 @@
+<div class="row form-row">
+<div class="col-md-6 col-sm-6 col-xs-6">
+<label>Server Name</label>
+<!--<input type="text" class="form-control" (input) = "onUpdateServerName($event)" />-->
+<input type="text" class="form-control" [(ngModel)] = "serverName"/>
+<!--<p>{{serverName}}</p>-->
+</div>
+</div>
+<div class="row form-row">
+<div class="col-md-6 col-sm-6 col-xs-6">
+<button class="btn btn-primary" [disabled] = "allowNewServer" (click) = "onCreateServer()">Add Server</button>
+<p [innerText] = "serverCreationStatus" *ngIf = "serverCreated; else noServer"></p>
+<ng-template #noServer>
+<p>No Server was created!</p>
+</ng-template>
+</div>
+</div>
+<app-server-container *ngFor = "let server of servers"></app-server-container>
+<div class="row form-row">
+<button class="btn btn-primary" (click) = "addItems()">Add Items</button>
+</div>
+
+<div *ngFor = "let item of items">
+	<card-server-container class = "box" *app-delay = '500 * item'>
+		{{item}}
+	</card-server-container>
+</div>

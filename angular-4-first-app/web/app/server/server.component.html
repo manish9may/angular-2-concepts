@@ -1,0 +1,5 @@
+<span server-highlighter [highlight-color] = 'color'>Start Of Server Zone</span>
+<p 
+[ngStyle] = "{backgroundColor : getColor()}" 
+[ngClass] = "{online : serverStatus === 'online'}"
+>Server With ID {{serverId}} is {{ getServerStatus() || serverStatus }}</p>
